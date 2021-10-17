@@ -1,0 +1,23 @@
+.btn {
+    text-decoration: none ;
+    // color: $t;
+}
+.btn:focus {
+    box-shadow: none;
+} 
+
+// btn trasparet configuration
+.btn-transparent {
+    color: $giallo;
+    display: inline-block;
+    border: $giallo solid 1px;
+    font-weight: 300;
+    padding: .4em 1.6em;
+    border-radius: 2rem;
+
+    transition: background  300ms ease-in-out; 
+}
+.btn-transparent:hover{ 
+    background: $giallo;
+    color: $background-color;
+}

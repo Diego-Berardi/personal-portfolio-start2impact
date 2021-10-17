@@ -1,0 +1,52 @@
+
+
+// work section
+#work {
+    margin-top: 4em;
+    padding-top: 5em;
+    .title-section{
+        margin-top: 2rem;
+        margin-bottom: 2em;
+        font-size: var(--h3-font-size);
+    }
+    div{
+       margin: 2em 0;
+       display: flex;
+       flex-direction: column;
+        img {
+            max-width: 95%;
+            height: 350px;
+            z-index: -3;
+            align-self: center;
+        } 
+        h4{
+            transform: translateY(-1em);
+
+            font-size: var(--h3-font-size);
+            background-color: rgba(54, 54, 54, 0.782);
+            color: white;
+            align-self: start;
+            padding: .4em;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+@media  only  screen and (min-width: 560px) {
+
+}
+
+@media  only  screen  and (min-width: 769px) {
+
+}
+
+@media  only  screen and (min-width:  993px) {
+
+}
+
+@media  only  screen and (min-width:  1200px) and (min-height :800px) {
+
+}

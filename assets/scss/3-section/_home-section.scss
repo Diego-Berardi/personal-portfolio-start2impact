@@ -1,0 +1,127 @@
+
+// home page section
+#home-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    #zone-name{
+        border-left: $text-color solid 4px;
+        padding-left: .9em;
+        #name {
+            font-size: var(--h1-font-size);
+            font-weight: 700;
+            margin-left: -3px;
+            color: $giallo;
+            .letter {
+                opacity: 1;
+            }
+        }
+        .text-home {
+            font-size: var(--h2-font-size);
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+        // p:first-of-type{
+        //     pad-top: -20px;
+        // }
+        h2{
+            margin-bottom: 1rem;
+        }
+
+        a{
+            font-size: 1.3rem; 
+            font-weight: 400;
+        }
+    }
+    
+    .social-icon {
+        position: absolute;
+        bottom: 0;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        .bx { 
+            color: $text-color;
+            font-size: 2.3rem;
+            
+        }
+        img{
+            width: 40px;
+            height: auto;
+        }
+    }
+    
+    
+}
+
+
+
+
+#scroll-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 2em auto;
+
+    border: white solid 2px;
+    border-radius: 10px;
+    width: 21px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6px 0;
+    
+    transition: border 300ms ease-in-out;
+    div{
+        background-color: white;
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        
+        animation: moviment 1000ms ease-in-out alternate;
+        animation-iteration-count: infinite;
+
+        transition: background-color 300ms ease-in-out;
+    }
+    
+    @keyframes moviment {
+        100%{
+            transform: translateY(13px);
+        }
+    }
+}
+
+#scroll-button:hover   {
+    
+    border: rgb(83, 83, 83) solid 2px;
+    div{
+        
+        background-color: rgb(83, 83, 83);
+    }
+    // animation: moviment 10000ms ease-in-out;
+}
+
+
+
+@media  only  screen  and (min-width: 560px) {
+    
+    #home-page #zone-name a{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media  only  screen  and (min-width: 769px) {
+    #home-page .social-icon {
+        flex-direction: row;
+    }
+}
+
+@media  only  screen and (min-width: 993px) {
+  
+}

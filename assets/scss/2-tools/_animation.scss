@@ -1,0 +1,83 @@
+
+// nav border animation
+
+.btn-nav {
+  display: inline-block;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  
+}
+.border-underline {
+    z-index: 1;
+    position: relative;
+    
+}
+
+.border-underline::before {
+    content: '';
+    position: absolute;
+   
+    bottom:-1px;
+    left: 0;
+    
+    height: 2px;
+    width: 100%;
+    background-color: $giallo;
+    border-radius: 19%;
+    
+    z-index: 3;
+    
+    transition: transform 250ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin:  right;
+}
+
+.border-underline:hover::before,
+.border-underline:focus::before {
+    transform: scale(1);
+    transform-origin: left;
+    background-color: $giallo;
+    
+}
+
+
+ 
+// letter hover color home-page
+.letter {
+  transition: color 400ms ease-in-out;
+  cursor: default;
+}
+.letter:hover { 
+  color: $giallo !important;
+} 
+
+// class for rubberband animation
+.rubberBand {
+  display: inline-block;
+  animation: rubberBand 1300ms ease-in-out ;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+
+
+
+// a : hover sbiadito 
+.hover-effect-white{
+  transition: color 200ms;
+}
+
+.hover-effect-white:focus,
+.hover-effect-white:hover{
+  color: rgb(167, 167, 167) !important;
+}
+
+
+
+
+
+
+
+

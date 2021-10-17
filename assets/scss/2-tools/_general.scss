@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,
+.great-container {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: $background-color;
+
+    // background: rgb(0,0,0);
+    // background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(8,0,0,1) 100%); 
+    
+    // background-image: url;
+
+    color: $text-color;
+
+    height: 100vh;    // atribute for the scroll snap effect
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+:root {
+    font-size: 13.5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+img{
+    max-width: 100%;
+}
+
+section{  
+    height: 100vh; // atribute for the scroll snap effect
+    scroll-snap-align: start;
+}
+
+// class for the cursor
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2.5px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    
+    animation: cursorAnim 2500ms infinite ease-in-out ;
+    display: none;
+}
+@keyframes cursorAnim {
+    8%{
+        transform: scale(1.7);
+    }
+    20%{
+        transform: scale(1);
+    }
+    
+}
+
+//   the fixed  a link section
+.select-section{
+    position: fixed;
+    right: 1rem;
+    
+    top: 50%;
+    transform: translate(0, -50%);
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+        list-style-type:none;
+
+        li  a {
+            padding: 20px;
+            span {
+                display: inline-block;
+                width: 40px;
+                height: 3px;
+                background-color: white;
+            }
+
+        }
+    }
+    
+}
+
+
+
+
+@media  only  screen and (min-width: 560px) {
+    *,
+    *::before,
+    *::after{
+        cursor: none !important;
+    }
+    .cursor {
+        display: inline;
+    }
+} 
+
+
+

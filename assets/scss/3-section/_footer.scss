@@ -1,0 +1,22 @@
+
+footer{
+    width: 100%;
+    background-color: $background-color;
+    color: white;
+    margin: 0;
+    padding: 5rem 0;
+    text-align: center;
+    h2 {
+        text-align: center;
+        margin: 1em;
+    }
+    .social-icon {
+        a {
+            margin: 1em;
+            .bx {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
