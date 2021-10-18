@@ -102,31 +102,6 @@ section {
   }
 }
 
-.select-section {
-  position: fixed;
-  right: 1rem;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.select-section ul {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  list-style-type: none;
-}
-
-.select-section ul li a {
-  padding: 20px;
-}
-
-.select-section ul li a span {
-  display: inline-block;
-  width: 40px;
-  height: 3px;
-  background-color: white;
-}
-
 @media only screen and (min-width: 560px) {
   *,
   *::before,
@@ -715,27 +690,4 @@ header nav #pc-nav li a {
   #contact .container .the-form {
     margin: 4rem 2.5rem;
   }
-}
-
-footer {
-  width: 100%;
-  background-color: #070707;
-  color: white;
-  margin: 0;
-  padding: 5rem 0;
-  text-align: center;
-}
-
-footer h2 {
-  text-align: center;
-  margin: 1em;
-}
-
-footer .social-icon a {
-  margin: 1em;
-}
-
-footer .social-icon a .bx {
-  font-size: 2rem;
-  color: white;
 }

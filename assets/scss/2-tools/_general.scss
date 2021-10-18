@@ -16,11 +16,6 @@ html,body,
 body {
     background-color: $background-color;
 
-    // background: rgb(0,0,0);
-    // background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(8,0,0,1) 100%); 
-    
-    // background-image: url;
-
     color: $text-color;
 
     height: 100vh;    // atribute for the scroll snap effect
@@ -71,33 +66,7 @@ section{
     
 }
 
-//   the fixed  a link section
-.select-section{
-    position: fixed;
-    right: 1rem;
-    
-    top: 50%;
-    transform: translate(0, -50%);
-    ul{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        
-        list-style-type:none;
 
-        li  a {
-            padding: 20px;
-            span {
-                display: inline-block;
-                width: 40px;
-                height: 3px;
-                background-color: white;
-            }
-
-        }
-    }
-    
-}
 
 
 

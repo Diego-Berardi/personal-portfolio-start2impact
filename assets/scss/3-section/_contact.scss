@@ -8,9 +8,7 @@
         font-size: var(--h3-font-size);
     }
     .container {
-        // border: white 1px solid;
-        // border-radius: 1rem;
-        // padding: 2rem;
+        
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -82,10 +80,7 @@
                     position: relative;
                     margin: 1rem 0;
                     padding: 1.3rem;
-
-                    // border: white solid 1px;
                     border-radius: 5px;
-                    
                     
                 }
                 label:last-of-type{
