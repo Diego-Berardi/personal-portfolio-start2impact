@@ -17,10 +17,6 @@ body {
     background-color: $background-color;
 
     color: $text-color;
-
-    height: 100vh;    // atribute for the scroll snap effect
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
 }
 
 :root {
@@ -37,8 +33,7 @@ img{
 }
 
 section{  
-    height: 100vh; // atribute for the scroll snap effect
-    scroll-snap-align: start;
+    min-height: 100vh; 
 }
 
 // class for the cursor
@@ -68,9 +63,6 @@ section{
 
 
 
-
-
-
 @media  only  screen and (min-width: 560px) {
     *,
     *::before,
@@ -79,6 +71,21 @@ section{
     }
     .cursor {
         display: inline;
+    }
+} 
+
+
+@media  only  screen and (min-width: 560px) and (min-height: 720px) {
+    // atribute for the scroll snap effect
+    body{   
+        scroll-snap-type: y mandatory;
+        height: 100vh;    
+        overflow-y: scroll;
+    }
+
+    section{  
+        height: 100vh; 
+        scroll-snap-align: start;
     }
 } 
 

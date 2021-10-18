@@ -107,13 +107,13 @@
     #home-page #zone-name a{
         font-size: 1.4rem;
     }
+    #home-page .social-icon {
+        flex-direction: row;
+    }
 }
 
 
 @media  only  screen  and (min-width: 769px) {
-    #home-page .social-icon {
-        flex-direction: row;
-    }
 }
 
 @media  only  screen and (min-width: 993px) {

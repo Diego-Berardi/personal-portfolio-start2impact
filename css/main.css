@@ -57,9 +57,6 @@ html, body,
 body {
   background-color: #070707;
   color: #bfbfbf;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 :root {
@@ -76,8 +73,7 @@ img {
 }
 
 section {
-  height: 100vh;
-  scroll-snap-align: start;
+  min-height: 100vh;
 }
 
 .cursor {
@@ -110,6 +106,18 @@ section {
   }
   .cursor {
     display: inline;
+  }
+}
+
+@media only screen and (min-width: 560px) and (min-height: 720px) {
+  body {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
   }
 }
 
@@ -510,9 +518,6 @@ header nav #pc-nav li a {
   #home-page #zone-name a {
     font-size: 1.4rem;
   }
-}
-
-@media only screen and (min-width: 769px) {
   #home-page .social-icon {
     flex-direction: row;
   }
